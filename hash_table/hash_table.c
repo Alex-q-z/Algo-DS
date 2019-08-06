@@ -95,6 +95,10 @@ char* ht_search(ht_hash_table* ht, const char* key){
 }
 
 // delete
+// note: since I'm using an open addressed hash table, the item to be deleted
+// might be part of a collision chain. As removing it from the hash table will
+// break that chain, I choose to mark the item as "DELETED" instead of really 
+// deleting it.
 void ht_delete(ht_hash_table* ht, const char* key){
   int hash_value = ht_get_hash(key, ht->size, 0); // index
   ht_item* item = ht->items[hash_value];
