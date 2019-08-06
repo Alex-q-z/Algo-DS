@@ -1,3 +1,3 @@
 # Algo-DS
-Base for my algorithms & data structures written in C, C++ and Java. \
+Base for my algorithms & data structures written in C, C++. \
 Under construction.
