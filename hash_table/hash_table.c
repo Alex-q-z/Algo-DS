@@ -4,6 +4,11 @@
 #include <math.h>
 #include "hash_table.h"
 
+/*
+  To do: enable updating value of the same key (require small revision in 
+  insert function); resizing
+ */
+
 static ht_item HT_DELETED_ITEM = {NULL, NULL};
 
 static ht_item* ht_item_initializer(const char* k, const char* v){
