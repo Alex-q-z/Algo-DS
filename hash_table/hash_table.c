@@ -4,6 +4,9 @@
 #include <math.h>
 #include "hash_table.h"
 
+// note: this hash_table is built partly following the instructions at
+// https://github.com/jamesroutley/write-a-hash-table
+
 /*
   To do: enable updating value of the same key (require small revision in 
   insert function); resizing
